@@ -62,7 +62,7 @@ if(!class_exists('Aq_Resize')) {
         /**
          * Run, forest.
          */
-        public function process( $url, $width = null, $height = null, $crop = null, $single = true, $upscale = false ) {
+        public function process( $url, $width = null, $height = -1, $crop = null, $single = true, $upscale = false ) {
             try {
                 // Validate inputs.
                 if (!$url)
